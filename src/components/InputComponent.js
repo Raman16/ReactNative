@@ -37,7 +37,7 @@ const CInput = ({
       <TextInput
         label={label}
         style={styles.input}
-        placeholder={`Enter ${label}`}
+        // placeholder={`Enter ${label}`}
         autoCapitalize="none"
         autoCorrect={false}
         keyboardType={keyboardType}
@@ -64,6 +64,7 @@ const styles = StyleSheet.create({
   input: {
     padding: 5,
     borderColor: "gray",
+    color:'#0a6e3f',
     borderWidth: 1,
     borderRadius: 8,
     fontSize: 13,
@@ -72,6 +73,7 @@ const styles = StyleSheet.create({
   label: {
     position: "absolute",
     backgroundColor: "white",
+    color:'#0a6e3f',
     left: 25,
     top: -8,
     zIndex: 999,

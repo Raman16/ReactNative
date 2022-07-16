@@ -17,7 +17,7 @@ const CMultilineInput = ({ label, onChangeText, isValid = true }) => {
       <TextInput
         label={label}
         style={styles.input}
-        placeholder={`Enter ${label}`}
+        // placeholder={`Enter ${label}`}
         autoCapitalize="none"
         autoCorrect={false}
         multiline
@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
   input: {
     padding: 5,
     borderColor: "gray",
+    color:'#0a6e3f',
     borderWidth: 1,
     borderRadius: 8,
     fontSize: 13,
@@ -50,6 +51,7 @@ const styles = StyleSheet.create({
     top: -8,
     zIndex: 999,
     fontSize: 13,
+    color:'#0a6e3f'
   },
 });
 export default CMultilineInput;

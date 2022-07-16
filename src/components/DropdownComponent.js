@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
   },
   dropdown: {
     height: 36,
-    borderColor: "gray",
+    borderColor: '#0a6e3f',
     borderWidth: 0.5,
     borderRadius: 8,
     paddingHorizontal: 8,
@@ -91,6 +91,7 @@ const styles = StyleSheet.create({
     zIndex: 999,
     paddingHorizontal: 8,
     fontSize: 13,
+    color:'#0a6e3f'
   },
   placeholderStyle: {
     fontSize: 13,

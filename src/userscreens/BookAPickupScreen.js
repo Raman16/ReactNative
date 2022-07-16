@@ -250,6 +250,7 @@ BookAPickupScreen.defaultProps = {
       isValid: false,
       value:
         "https://www.allianceplast.com/wp-content/uploads/no-image-1024x1024.png",
+      
     },
     description: {
       isValid: false,
@@ -285,9 +286,7 @@ BookAPickupScreen.defaultProps = {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 18,
     padding: 8,
-    marginBottom: 10,
     // borderColor: "grey",
     // borderWidth: 1,
   },
@@ -305,6 +304,9 @@ const styles = StyleSheet.create({
     height: "100%",
     aspectRatio: 1,
     alignSelf: "flex-start",
+  },
+  imageBtn:{
+    backgroundColor: "#0a6e3f",
   },
   spacer: {
     margin: 10,
