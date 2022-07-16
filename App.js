@@ -1,20 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { createAppContainer, createSwitchNavigator } from "react-navigation";
+import { createStackNavigator } from 'react-navigation-stack';
+import { createBottomTabNavigator } from "react-navigation-tabs";
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+import SigninScreen from './src/userscreens/SigninScreen'
+import BookAPickupScreen from './src/userscreens/BookAPickupScreen'
+import PickupListScreen from './src/userscreens/PickupListScreen'
+
+const switchNavigator = createSwitchNavigator({
+
+  loginFlow:createStackNavigator({
+    signup: SigninScreen,
+  }),
+  mainFlow:createBottomTabNavigator({
+             BookAPickup:BookAPickupScreen,
+             PickupList :PickupListScreen
+  })
+  
+  
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+ 
+);
+export default createAppContainer(switchNavigator);
